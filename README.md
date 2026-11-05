@@ -1,12 +1,37 @@
 # Veil
 
-Минималистичный VPN-клиент для Linux и Windows на основе Xray.
+A minimal VPN client for Linux and Windows, powered by [Xray-core](https://github.com/XTLS/Xray-core).
 
-**[Скачать последнюю версию](https://github.com/maltira/veil-releases/releases/latest)**
+This repository hosts the official builds of Veil and its issue tracker. The source code is closed.
 
-- Linux: `.deb`, `.rpm`, `.AppImage` (режим TUN работает только в deb и rpm)
-- Windows: установщик `.exe`
+## Download
 
-Нашли ошибку или есть пожелание? [Создайте обращение](https://github.com/maltira/veil-releases/issues).
+Get the latest build from [Releases](https://github.com/maltira/veil-releases/releases/latest).
 
-Исходный код закрыт, все права защищены. Veil использует [Xray-core](https://github.com/XTLS/Xray-core) (MPL-2.0).
+| Platform | Package |
+| --- | --- |
+| Linux | `.deb`, `.rpm`, `.AppImage` |
+| Windows | `.exe` installer |
+
+## Features
+
+- Import servers and subscriptions from links: VLESS, VMess, Trojan, Shadowsocks, Xray JSON and `incy://` links
+- Subscription details: traffic usage, expiry date and provider announcements
+- Server latency checks and automatic selection of the fastest server
+- System proxy or TUN mode
+- Connection check, live speed and event log
+- Tray icon, autostart and opening of proxy links (in installed builds)
+
+## Notes
+
+- **TUN on Linux** works in the `.deb` and `.rpm` packages only, not in the AppImage. On first use the system asks for the administrator password once.
+- **TUN on Windows** needs administrator rights. Veil offers to restart itself as administrator.
+- Windows support is in early testing.
+
+## Feedback
+
+Found a bug or have a suggestion? [Open an issue](https://github.com/maltira/veil-releases/issues). Please include the Veil version and system from the *About* page, and do not share subscription links or server keys.
+
+## License
+
+The source code is closed, all rights reserved. Veil includes [Xray-core](https://github.com/XTLS/Xray-core) (MPL-2.0), Electron and other open-source components under their own licenses.
