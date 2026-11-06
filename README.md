@@ -28,6 +28,26 @@ Get the latest build from [Releases](https://github.com/maltira/veil-releases/re
 - **TUN on Windows** needs administrator rights. Veil offers to restart itself as administrator.
 - Windows support is in early testing.
 
+## Your data and uninstalling
+
+Veil keeps everything locally: subscriptions, settings and a random device ID. Nothing is sent anywhere except to your subscription provider.
+
+| System | Data folder |
+| --- | --- |
+| Linux | `~/.config/veil` |
+| Windows | `%APPDATA%\veil` |
+
+To erase all subscriptions and settings, close Veil and delete that folder. The next launch starts from scratch.
+
+Before uninstalling, turn off **Launch at login** and **Open links in Veil** in *Settings → System*. Removing the package cannot clean files in your own profile, so if you forget, a few harmless leftovers stay behind:
+
+- `~/.config/autostart/veil.desktop` (autostart, Linux)
+- lines `x-scheme-handler/…=veil.desktop` for `incy`, `vless`, `vmess`, `trojan`, `ss` in `~/.config/mimeapps.list` (Linux)
+- `~/.local/share/applications/veil.desktop` and `~/.local/share/icons/veil-custom.png`, only if you changed the app icon (Linux)
+- the *Veil* entry in *Task Manager → Startup apps* (Windows)
+
+Veil restores your system proxy when it disconnects or quits. The TUN permission on Linux belongs to the installed program file and goes away when you remove the package.
+
 ## Feedback
 
 Found a bug or have a suggestion? [Open an issue](https://github.com/maltira/veil-releases/issues). Please include the Veil version and system from the *About* page, and do not share subscription links or server keys.
