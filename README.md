@@ -41,16 +41,24 @@ All files are on the [Releases](https://github.com/maltira/veil-releases/release
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td width="50%"><img src="screenshots/02-servers.png" alt="Servers"></td>
-    <td width="50%"><img src="screenshots/03-settings.png" alt="Settings"></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="screenshots/04-logs.png" alt="Event log"></td>
-    <td width="50%"><img src="screenshots/05-appearance.png" alt="Appearance"></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="screenshots/02-servers.png" alt="Servers" width="49%">
+  <img src="screenshots/03-settings.png" alt="Settings" width="49%">
+</p>
+
+<p align="center">
+  <img src="screenshots/04-logs.png" alt="Event log" width="49%">
+  <img src="screenshots/05-appearance.png" alt="Appearance" width="49%">
+</p>
+
+<p align="center">
+  <img src="screenshots/06-icons.png" alt="48 app icons" width="49%">
+  <img src="screenshots/07-ping.png" alt="Server check settings" width="49%">
+</p>
+
+<p align="center">
+  <img src="screenshots/08-storage.png" alt="Data storage and reset" width="49%">
+</p>
 
 ## Notes
 
