@@ -35,3 +35,5 @@ Found a bug or have a suggestion? [Open an issue](https://github.com/maltira/vei
 ## License
 
 The source code is closed, all rights reserved. Veil includes [Xray-core](https://github.com/XTLS/Xray-core) (MPL-2.0), Electron and other open-source components under their own licenses.
+
+Country flags are drawn with [Twemoji](https://github.com/twitter/twemoji) artwork (© Twitter, Inc. and other contributors), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
