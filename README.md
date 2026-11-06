@@ -48,6 +48,10 @@ Before uninstalling, turn off **Launch at login** and **Open links in Veil** in 
 
 Veil restores your system proxy when it disconnects or quits. The TUN permission on Linux belongs to the installed program file and goes away when you remove the package.
 
+## Windows warning
+
+The installer is not code-signed yet, so Windows SmartScreen may show "Windows protected your PC". Click **More info → Run anyway**. You can check the file against `SHA256SUMS` in the release.
+
 ## Feedback
 
 Found a bug or have a suggestion? [Open an issue](https://github.com/maltira/veil-releases/issues). Please include the Veil version and system from the *About* page, and do not share subscription links or server keys.
