@@ -1,32 +1,66 @@
+<div align="center">
+
+<img src="assets/logo.png" alt="Veil" width="96" height="96">
+
 # Veil
 
-A minimal VPN client for Linux and Windows, powered by [Xray-core](https://github.com/XTLS/Xray-core).
+**A minimal VPN client for Linux and Windows, powered by [Xray-core](https://github.com/XTLS/Xray-core).**
 
-This repository hosts the official builds of Veil and its issue tracker. The source code is closed.
+[**Download the latest version**](https://github.com/maltira/veil-releases/releases/latest)
+&nbsp;·&nbsp;
+[Report a problem](https://github.com/maltira/veil-releases/issues)
+
+<br>
+
+<img src="screenshots/01-home.png" alt="Veil: main screen" width="760">
+
+</div>
+
+<br>
 
 ## Download
 
-Get the latest build from [Releases](https://github.com/maltira/veil-releases/releases/latest).
+| Platform | Package | Notes |
+| --- | --- | --- |
+| **Windows** | `.exe` installer | Windows 10 and newer. The installer is not code-signed yet, see [below](#windows-warning) |
+| **Linux** | `.deb` | Debian, Ubuntu and derivatives |
+| **Linux** | `.rpm` | Fedora, openSUSE and derivatives |
+| **Linux** | `.AppImage` | Any distribution; TUN mode is not available |
 
-| Platform | Package |
-| --- | --- |
-| Linux | `.deb`, `.rpm`, `.AppImage` |
-| Windows | `.exe` installer |
+All files are on the [Releases](https://github.com/maltira/veil-releases/releases/latest) page together with `SHA256SUMS` to verify your download.
 
 ## Features
 
-- Import servers and subscriptions from links: VLESS, VMess, Trojan, Shadowsocks, Xray JSON and `incy://` links
-- Subscription details: traffic usage, expiry date and provider announcements
-- Server latency checks and automatic selection of the fastest server
-- System proxy or TUN mode
-- Connection check, live speed and event log
-- Tray icon, autostart and opening of proxy links (in installed builds)
+- **Servers and subscriptions.** Add them by link: VLESS, VMess, Trojan, Shadowsocks, Xray JSON and `incy://`. See traffic usage, expiry date and announcements from your provider.
+- **Fast server choice.** Check latency and pick the fastest server automatically.
+- **Two modes.** System proxy, or TUN to route all traffic of the computer.
+- **Clear status.** Connection check with your visible IP, live speed and an event log. A green dot on the tray icon shows when the VPN is on.
+- **Yours to tune.** Dark and light themes, fonts, interface scale and 48 app icons.
+- **Fits your system.** Tray icon, autostart and opening proxy links in Veil.
+- **Under control.** Update check on demand, one-click reset to the first launch.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/02-servers.png" alt="Servers"></td>
+    <td width="50%"><img src="screenshots/03-settings.png" alt="Settings"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/04-logs.png" alt="Event log"></td>
+    <td width="50%"><img src="screenshots/05-appearance.png" alt="Appearance"></td>
+  </tr>
+</table>
 
 ## Notes
 
 - **TUN on Linux** works in the `.deb` and `.rpm` packages only, not in the AppImage. On first use the system asks for the administrator password once.
 - **TUN on Windows** needs administrator rights. Veil offers to restart itself as administrator.
 - Windows support is in early testing.
+
+## Windows warning
+
+The installer is not code-signed yet, so Windows SmartScreen may show "Windows protected your PC". Click **More info → Run anyway**. You can check the file against `SHA256SUMS` in the release.
 
 ## Your data and uninstalling
 
@@ -37,20 +71,15 @@ Veil keeps everything locally: subscriptions, settings and a random device ID. N
 | Linux | `~/.config/veil` |
 | Windows | `%APPDATA%\veil` |
 
-To erase all subscriptions and settings, close Veil and delete that folder. The next launch starts from scratch.
+To erase all subscriptions and settings, use **Settings → Data → Reset the app**, or close Veil and delete that folder. The Windows uninstaller has a checkbox to delete your saved data too.
 
 Before uninstalling, turn off **Launch at login** and **Open links in Veil** in *Settings → System*. Removing the package cannot clean files in your own profile, so if you forget, a few harmless leftovers stay behind:
 
 - `~/.config/autostart/veil.desktop` (autostart, Linux)
 - lines `x-scheme-handler/…=veil.desktop` for `incy`, `vless`, `vmess`, `trojan`, `ss` in `~/.config/mimeapps.list` (Linux)
 - `~/.local/share/applications/veil.desktop` and `~/.local/share/icons/veil-custom.png`, only if you changed the app icon (Linux)
-- the *Veil* entry in *Task Manager → Startup apps* (Windows)
 
 Veil restores your system proxy when it disconnects or quits. The TUN permission on Linux belongs to the installed program file and goes away when you remove the package.
-
-## Windows warning
-
-The installer is not code-signed yet, so Windows SmartScreen may show "Windows protected your PC". Click **More info → Run anyway**. You can check the file against `SHA256SUMS` in the release.
 
 ## Feedback
 
