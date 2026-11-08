@@ -42,31 +42,21 @@ All files are on the [Releases](https://github.com/maltira/veil-releases/release
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/02-servers.png" alt="Servers" width="49%">
-  <img src="screenshots/03-settings.png" alt="Settings" width="49%">
+  <img src="screenshots/01-home.png" alt="Main screen" width="100%">
 </p>
 
 <p align="center">
-  <img src="screenshots/04-logs.png" alt="Event log" width="49%">
+  <img src="screenshots/02-servers.png" alt="Servers" width="49%">
+  <img src="screenshots/03-logs.png" alt="Event log" width="49%">
+</p>
+
+<p align="center">
+  <img src="screenshots/04-settings.png" alt="Settings" width="49%">
   <img src="screenshots/05-appearance.png" alt="Appearance" width="49%">
 </p>
 
 <p align="center">
-  <img src="screenshots/06-icons.png" alt="48 app icons" width="49%">
-  <img src="screenshots/07-ping.png" alt="Server check settings" width="49%">
-</p>
-
-<p align="center">
-  <img src="screenshots/08-storage.png" alt="Data storage and reset" width="49%">
-</p>
-
-<p align="center">
-  <img src="screenshots/09-system.png" alt="System settings" width="49%">
-  <img src="screenshots/10-connection-settings.png" alt="Connection settings" width="49%">
-</p>
-
-<p align="center">
-  <img src="screenshots/11-subscriptions-settings.png" alt="Subscription settings" width="49%">
+  <img src="screenshots/06-about.png" alt="About" width="49%">
 </p>
 
 ## Notes
